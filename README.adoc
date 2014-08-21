@@ -49,6 +49,14 @@ In the JBoss Fuse/Karaf console, add the url pointing to the file containing the
 
 Now you are ready to start to play with different examples described hereafter !
 
+
+Released versions
+-----------------
+See the tagged releases for the following versions of the product:
+
+- v1.0 - JBoss BRMS 6.0.2, JBoss Fuse 6.1.0 running demo projects.
+
+
 == JBoss BRMS OSGi Example
 
 === Simple Rule Example
