@@ -38,22 +38,22 @@
             <dependency>
                 <groupId>org.kie</groupId>
                 <artifactId>kie-api</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.kie</groupId>
                 <artifactId>kie-internal</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.kie</groupId>
                 <artifactId>kie-ci</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.kie</groupId>
                 <artifactId>kie-camel</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
                 <!-- Added exclussion as Kie, Drools projects use a different versin of Spring -->
                 <exclusions>
                     <exclusion>
@@ -73,12 +73,12 @@
             <dependency>
                 <groupId>org.kie</groupId>
                 <artifactId>kie-aries-blueprint</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.kie</groupId>
                 <artifactId>kie-spring</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
                 <!-- Added exclussion as Kie, Drools projects use a different versin of Spring -->
                 <exclusions>
                     <exclusion>
@@ -100,22 +100,22 @@
             <dependency>
                 <groupId>org.drools</groupId>
                 <artifactId>drools-core</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.drools</groupId>
                 <artifactId>drools-compiler</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.drools</groupId>
                 <artifactId>drools-decisiontables</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.drools</groupId>
                 <artifactId>drools-osgi-integration</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -123,32 +123,32 @@
             <dependency>
                 <groupId>org.jbpm</groupId>
                 <artifactId>jbpm-bpmn2</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jbpm</groupId>
                 <artifactId>jbpm-human-task-core</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jbpm</groupId>
                 <artifactId>jbpm-persistence-jpa</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jbpm</groupId>
                 <artifactId>jbpm-flow</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jbpm</groupId>
                 <artifactId>jbpm-runtime-manager</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jbpm</groupId>
                 <artifactId>jbpm-audit</artifactId>
-                <version>${drools.version}</version>
+                <version>${brms.version}</version>
             </dependency>
 
             <!-- Spring -->
@@ -239,6 +239,20 @@
             <name>JBoss.org Fuse Releases</name>
             <url>http://repository.jboss.org/nexus/content/repositories/fs-releases</url>
         </repository>
+				<repository>
+						<id>jboss-maven-repository</id>
+						<name>JBoss Maven Repository</name>
+						<url>http://maven.repository.redhat.com/techpreview/all/</url>
+						<layout>default</layout>
+						<releases>
+							<enabled>true</enabled>
+							<updatePolicy>never</updatePolicy>
+						</releases>
+						<snapshots>
+							<enabled>false</enabled>
+							<updatePolicy>never</updatePolicy>
+						</snapshots>
+				</repository>
     </repositories>
 
     <modules>
@@ -265,7 +279,7 @@
 
         <!-- Spring/Blueprint Drools & Camel -->
         <module>blueprint-camel-decision-table</module>
-        <module>spring-camel-decision-table</module>
+				<!--   <module>spring-camel-decision-table</module> -->
 
         <!-- Spring jBPM & Persistence -->
         <module>simple-process</module>
@@ -280,13 +294,10 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <!-- Community -->
-                <!--
-                <drools.version>6.1.0.Beta4</drools.version>
-                <drools.version>6.0.3-SNAPSHOT</drools.version>
-                -->
-                <drools.version>6.2.0-SNAPSHOT</drools.version>
-<!--              <drools.version>6.1.0.CR1</drools.version>-->
+								<!-- Based on JBoss BRMS 6.0.2.GA product -->
+                <brms.version>6.0.3-redhat-4</brms.version>
+
+								<!-- Based on JBoss Fuse 6.1.0.GA product --> 
                 <jboss.fuse.bom.version>6.1.0.redhat-379</jboss.fuse.bom.version>
 
                 <!-- Versions defined in the BOM for missing artefacts -->
