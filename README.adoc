@@ -6,30 +6,21 @@
 
 toc::[]
 
-This project contains Drools & jBPM OSGi examples that you can deploy on :
-supported release
-- https://www.jboss.org/products/fuse.html[RedHat JBoss Fuse 6.1]
-or community releases
-- http://karaf.apache.org[Apache Karaf]
-- http://fabric8.io/[Fabric 8 - Community project of RedHat JBoss Fuse]
+This project contains JBoss BRMS & JBoss Fuse OSGi examples that you can deploy.
 
 == Download and compile the project
 
-- In a Dos/Unix terminal, clone this git project and checkout out the tag version
+1. Clone project or [download and unzip.](https://github.com/eschabell/droolsjbpm-osgi-examples/archive/master.zip)
 
-  git clone https://github.com/cmoulliard/droolsjbpm-osgi-examples.git
-  git checkout 6.1.0.CR1
-  
-or download the release available here : https://github.com/cmoulliard/droolsjbpm-osgi-examples/releases
 
-- Move to that directory
+2. Compile it using `maven`
 
-  cd droolsjbpm-osgi-examples
+  ```
+  $ cd droolsjbpm-osgi-examples
 
-- Compile it using `maven`
+  $ mvn clean install 
+  ```
 
-  mvn clean install
-  
 == Download and deploy on RedHat JBoss Fuse
 
 - Open a browser at the following address : https://www.jboss.org/products/fuse.html
