@@ -21,6 +21,10 @@ This project contains JBoss BRMS & JBoss Fuse OSGi examples that you can deploy.
   $ mvn clean install 
   ```
 
+== Video How To Run
+
+[![Fuse BRMS Video](https://raw.githubusercontent.com/eschabell/brms-fuse-osgi-examples/master/documentation/images/fuse-brms-video.png)](http://vimeo.com/106557607)
+
 == Download and deploy on RedHat JBoss Fuse
 
 - Open a browser at the following address : https://www.jboss.org/products/fuse.html
