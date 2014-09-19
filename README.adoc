@@ -2,6 +2,10 @@
 :data-uri:
 :toc:
 
+== Video How To Run
+
+image:documentation/images/fuse-brms-video.png[Video,link="http://vimeo.com/106557607"]
+
 == JBoss BRMS & JBoss Fuse examples for OSGi platforms (JBoss Fuse, Karaf, Fabric8)
 
 toc::[]
@@ -20,10 +24,6 @@ This project contains JBoss BRMS & JBoss Fuse OSGi examples that you can deploy.
 
   $ mvn clean install 
   ```
-
-== Video How To Run
-
-image:documentation/images/fuse-brms-video.png[Video,link="http://vimeo.com/106557607"]
 
 == Download and deploy on RedHat JBoss Fuse
 
