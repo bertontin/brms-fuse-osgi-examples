@@ -14,7 +14,7 @@ This project contains JBoss BRMS & JBoss Fuse OSGi examples that you can deploy.
 
 == Download and compile the project
 
-1. Clone project or [download and unzip.](https://github.com/jbossdemocentral/brms-fuse-osgi-examples/archive/master.zip)
+1. Clone project or (https://github.com/jbossdemocentral/brms-fuse-osgi-examples/archive/master.zip)[download and unzip.]
 
 
 2. Compile it using `maven`
