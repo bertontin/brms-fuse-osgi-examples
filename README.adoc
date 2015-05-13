@@ -32,7 +32,7 @@ This project contains JBoss BRMS & JBoss Fuse OSGi examples that you can deploy.
 - Unzip it under your local temp directory *~/temp*
 - Change to the JBoss Fuse bin directory
 
-  cd ~/temp/jboss-fuse-6.1.0.redhat-379/bin
+  cd ~/temp/jboss-fuse-6.1.1.redhat-412/bin
 
 - Start Fuse console
 
@@ -59,7 +59,7 @@ Released versions
 See the tagged releases for the following versions of the product:
 
 - v1.0 - JBoss BRMS 6.0.2, JBoss Fuse 6.1.0 running demo projects.
-
+- v1.0 - JBoss BRMS 6.2.0, JBoss Fuse 6.1.1 running demo projects.
 
 == JBoss BRMS OSGi Example
 
