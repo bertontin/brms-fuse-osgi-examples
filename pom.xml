@@ -317,10 +317,10 @@
             </activation>
             <properties>
 								<!-- Based on JBoss BRMS 6.0.2.GA product -->
-                <brms.version>6.0.3-redhat-4</brms.version>
+                <brms.version>6.2.0.Final</brms.version>
 
 								<!-- Based on JBoss Fuse 6.1.0.GA product --> 
-                <jboss.fuse.bom.version>6.1.0.redhat-379</jboss.fuse.bom.version>
+                <jboss.fuse.bom.version>6.1.1.redhat-412</jboss.fuse.bom.version>
 
                 <!-- Versions defined in the BOM for missing artefacts -->
                 <spring.version>3.2.8.RELEASE</spring.version>
