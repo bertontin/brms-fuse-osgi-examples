@@ -28,11 +28,11 @@ This project contains JBoss BRMS & JBoss Fuse OSGi examples that you can deploy.
 == Download and deploy on RedHat JBoss Fuse
 
 - Open a browser at the following address : https://www.jboss.org/products/fuse.html
-- Download `JBoss Fuse 6.1`
+- Download `JBoss Fuse 6.2`
 - Unzip it under your local temp directory *~/temp*
 - Change to the JBoss Fuse bin directory
 
-  cd ~/temp/jboss-fuse-6.1.1.redhat-412/bin
+  cd ~/temp/jboss-fuse-6.2.0.redhat-133/bin
 
 - Start Fuse console
 
